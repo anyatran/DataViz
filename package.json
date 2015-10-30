@@ -1,5 +1,5 @@
 {
-  "name": "anyatran",
+  "name": "DataViz",
   "version": "1.0.0",
   "description": "personal website",
   "main": "main.js",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/anyatran/anyatran.git"
+    "url": "git://github.com/anyatran/DataViz.git"
   },
   "author": "anya tran",
   "license": "ISC"
