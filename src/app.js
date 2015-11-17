@@ -9,12 +9,18 @@ app.set('view engine', 'jade');
 
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'assets')));
-app.get("/", function(req, res) {
-    res.send("Hello");
+app.get("/", function (req, res) {
+  res.send("Hello");
 });
 
-app.get("/header", function(req, res) {
-    res.render("header", {title: "Anya", message: "hello there"});
+app.get("/header", function (req, res) {
+  res.render("header", {
+    title: "Anya",
+    message: "hello there"
+  });
+});
+app.get("/force", function (req, res) {
+  res.render("force", {});
 });
 /*
 var httpServer = require('http').createServer(app);
@@ -23,8 +29,8 @@ httpServer.listen(app.get('port'), function() {
 });
 */
 var server = app.listen(3000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
+  var host = server.address().address;
+  var port = server.address().port;
 
-    console.log('Example app listening at http://%s:%s', host, port);
+  console.log('Example app listening at http://%s:%s', host, port);
 });

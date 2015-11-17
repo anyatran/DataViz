@@ -1,7 +1,25 @@
-body{
-    background-color: white;
 
+body {
+  background-color: #D4E4E4;
 }
+
 p {
-    color: red;
+  color: red;
+}
+
+
+.link {
+  stroke: #444140;
+  stroke-width: 3.5px;
+}
+
+.node {
+  cursor: move;
+  fill: #fff;
+  stroke: #444140;
+  stroke-width: 3.5px;
+}
+
+.node.fixed {
+  fill: #f00;
 }
