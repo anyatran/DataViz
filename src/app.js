@@ -22,6 +22,9 @@ app.get("/header", function (req, res) {
 app.get("/force", function (req, res) {
   res.render("force", {});
 });
+app.get("/map", function(req, res) {
+  res.render("map", {});
+});
 /*
 var httpServer = require('http').createServer(app);
 httpServer.listen(app.get('port'), function() {

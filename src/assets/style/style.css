@@ -23,3 +23,22 @@ p {
 .node.fixed {
   fill: #f00;
 }
+
+/
+/*=============MAP=================*/
+.land {
+  fill: #222;
+}
+
+.boundary {
+  fill: none;
+  stroke: #444140;
+  stroke-width: 1.5px;
+}
+
+.graticule {
+  fill: none;
+  stroke: #444140;
+  stroke-opacity: .2;
+  stroke-width: .5px;
+}

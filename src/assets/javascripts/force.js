@@ -17,7 +17,7 @@ var svg = d3.select("body").append("svg")
 var link = svg.selectAll(".link");
 var node = svg.selectAll(".node");
 
-d3.json("../javascripts/nodes.json", function (error, graph) {
+d3.json("../json/nodes.json", function (error, graph) {
   if (error) throw error;
 
   force
